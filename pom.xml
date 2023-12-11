@@ -1,18 +1,119 @@
+<!--
+  ~ Copyright (c) 2023. JTissier
+-->
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>com.jtissdev.api</groupId>
   <artifactId>RVRecipesBook</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>Maven Quick Start Archetype</name>
+
+  <name>RVRecipesBookApi</name>
   <url>http://maven.apache.org</url>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.0.0</version> <!-- Mettez à jour la version actuelle -->
+  </parent>
+  <!-- =====   la description du projet ===== -->
+  <description> Api des applications RVRecipesBook</description>
+  <!-- ===== Organisation ===== -->
+  <organization>
+    <name>JTissDevInfo</name>
+    <!--    <url></url>-->
+  </organization>
+
+  <!-- ===== Developers ===== -->
+  <developers>
+    <developer>
+      <id>JTiss</id>
+      <name>Julien Tissier</name>
+      <email>jtdevweb@gmail.com</email>
+      <!--      <url></url>-->
+      <!--      <organization></organization>-->
+      <!--      <organizationUrl></organizationUrl>-->
+      <roles>
+        <role>Architect</role>
+        <role>Developer</role>
+        <role>Project Owner</role>
+      </roles>
+      <!--      <timezone></timezone>-->
+      <!--      <properties><picUrl></picUrl></properties>-->
+    </developer>
+  </developers>
+
+  <!-- ===== Dependencies ================-->
   <dependencies>
+    <!-- JUnit -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- Dépendance ConfigDataBaseAccess -->
+    <dependency>
+      <groupId>com.JTissDev.Lib</groupId>
+      <artifactId>ConfigDataBaseAccess</artifactId>
+      <version>3.0.1</version>
+    </dependency>
+
+    <!-- Dépendance AppsManager -->
+    <dependency>
+      <groupId>com.jtissdev.lib</groupId>
+      <artifactId>AppsManager</artifactId>
+      <version>1.1</version>
+    </dependency>
+
+    <!-- Dépendance Spring pour API REST -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
   </dependencies>
+
+  <!-- ===== Gestion de profils =====================-->
+  <profiles>
+    <!-- Profil de développement -->
+    <profile>
+      <id>dev</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <env>dev</env>
+      </properties>
+    </profile>
+
+    <!-- Profil de production -->
+    <profile>
+      <id>prod</id>
+      <properties>
+        <env>prod</env>
+      </properties>
+    </profile>
+  </profiles>
+
+  <!-- ===== Configuration des fichiers de propriétés d'environnement =====================-->
+  <build>
+    <finalName>RV-Recipes-Book-Api</finalName>
+    <filters>
+      <filter>src/main/resources/env/application.${env}.properties</filter>
+    </filters>
+  </build>
+
+  <!-- ===== Licence  =====================-->
+  <licenses>
+    <license>
+      <name>Insérez le nom de votre licence ici</name>
+      <url>Insérez l'URL de la licence ici</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
 </project>

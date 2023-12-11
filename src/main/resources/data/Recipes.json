@@ -1,0 +1,26 @@
+{
+    "recipe": {
+        "id": "",
+        "name": "",
+        "difficulty": "",
+        "prepTime": "",  
+        "cookTime": "", 
+        "ingredients": [
+            {
+                "id": "",
+                "mainIngredient": "",
+                "quantity": "",  
+                "unit": "", 
+                "productInfo": {  
+                    "name": ""
+                }
+            }
+        ],
+        "steps": [
+            {
+                "order": "",
+                "text": ""
+            }
+        ]
+    }
+}
