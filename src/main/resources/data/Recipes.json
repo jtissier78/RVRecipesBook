@@ -13,7 +13,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "1" ,
 		  "name" : "Tomate"
 		}
@@ -23,7 +23,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "2" ,
 		  "name" : "Concombre"
 		}
@@ -33,7 +33,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "3" ,
 		  "name" : "Fraise"
 		}
@@ -43,7 +43,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "4" ,
 		  "name" : "Poivron"
 		}
@@ -53,7 +53,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "5" ,
 		  "name" : "Oignon rouge"
 		}
@@ -63,7 +63,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "6" ,
 		  "name" : "Citron"
 		}
@@ -101,7 +101,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1" ,
 		"unit" : "pièce" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "7" ,
 		  "name" : "Potiron"
 		}
@@ -111,7 +111,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "2" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "8" ,
 		  "name" : "Carottes"
 		}
@@ -121,7 +121,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1" ,
 		"unit" : "pièce" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "9" ,
 		  "name" : "Oignon"
 		}
@@ -131,7 +131,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "2 gousses" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "10" ,
 		  "name" : "Ail"
 		}
@@ -141,7 +141,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1 cuillère à soupe" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "11" ,
 		  "name" : "Beurre"
 		}
@@ -151,7 +151,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1 litre" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "12" ,
 		  "name" : "Bouillon de légumes"
 		}
@@ -194,7 +194,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "13" ,
 		  "name" : "Chou-fleur"
 		}
@@ -204,7 +204,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "2 tasses" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "14" ,
 		  "name" : "Fromage râpé (au choix)"
 		}
@@ -214,7 +214,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1 tasse" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "15" ,
 		  "name" : "Crème fraîche"
 		}
@@ -224,7 +224,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "2 cuillères à soupe" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "16" ,
 		  "name" : "Farine"
 		}
@@ -234,7 +234,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "2 cuillères à soupe" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "17" ,
 		  "name" : "Beurre"
 		}
@@ -244,7 +244,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1 pincée" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "18" ,
 		  "name" : "Muscade"
 		}
@@ -291,7 +291,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "550" ,
 		"unit" : "grammes" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "19" ,
 		  "name" : "Cerfeuil tubéreux"
 		}
@@ -301,7 +301,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "16" ,
 		"unit" : "unités" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "20" ,
 		  "name" : "Noix de St-Jacques sans corail"
 		}
@@ -311,7 +311,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "10-15" ,
 		"unit" : "centilitres" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "21" ,
 		  "name" : "Lait"
 		}
@@ -321,7 +321,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1" ,
 		"unit" : "unité" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "22" ,
 		  "name" : "Orange à jus"
 		}
@@ -331,7 +331,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "30" ,
 		"unit" : "grammes" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "23" ,
 		  "name" : "Beurre"
 		}
@@ -341,7 +341,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "4" ,
 		"unit" : "cuillères à soupe" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "24" ,
 		  "name" : "Crème fraîche épaisse"
 		}
@@ -351,7 +351,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "null" ,
 		"unit" : "sel" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "25" ,
 		  "name" : "Sel"
 		}
@@ -361,7 +361,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "null" ,
 		"unit" : "poivre" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "26" ,
 		  "name" : "Poivre"
 		}
@@ -409,7 +409,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1" ,
 		"unit" : "pièce" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "1" ,
 		  "name" : "Laitue"
 		}
@@ -419,7 +419,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "3" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "2" ,
 		  "name" : "Tomates"
 		}
@@ -429,7 +429,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "2" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "3" ,
 		  "name" : "Concombres"
 		}
@@ -439,7 +439,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "2" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "4" ,
 		  "name" : "Poivrons"
 		}
@@ -449,7 +449,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1" ,
 		"unit" : "pièce" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "5" ,
 		  "name" : "Oignons rouges"
 		}
@@ -459,7 +459,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "2" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "6" ,
 		  "name" : "Avocats"
 		}
@@ -502,7 +502,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "12" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "1" ,
 		  "name" : "Fraises"
 		}
@@ -512,7 +512,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1 tasse" ,
 		"unit" : "tasse" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "2" ,
 		  "name" : "Raisins rouges"
 		}
@@ -522,7 +522,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1 tasse" ,
 		"unit" : "tasse" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "3" ,
 		  "name" : "Ananas"
 		}
@@ -532,7 +532,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1 tasse" ,
 		"unit" : "tasse" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "4" ,
 		  "name" : "Melon"
 		}
@@ -542,7 +542,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "2 cuillères à soupe" ,
 		"unit" : "cuillères à soupe" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "5" ,
 		  "name" : "Miel"
 		}
@@ -580,7 +580,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1" ,
 		"unit" : "pièce" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "1" ,
 		  "name" : "Pâte brisée"
 		}
@@ -590,7 +590,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "4" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "2" ,
 		  "name" : "Pêches"
 		}
@@ -600,7 +600,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "6" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "3" ,
 		  "name" : "Abricots"
 		}
@@ -610,7 +610,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1 tasse" ,
 		"unit" : "tasse" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "4" ,
 		  "name" : "Cerises"
 		}
@@ -620,7 +620,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1/2 tasse" ,
 		"unit" : "tasse" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "5" ,
 		  "name" : "Sucre"
 		}
@@ -668,7 +668,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "2" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "1" ,
 		  "name" : "Courgettes"
 		}
@@ -678,7 +678,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "2" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "2" ,
 		  "name" : "Aubergines"
 		}
@@ -688,7 +688,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "4" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "3" ,
 		  "name" : "Tomates"
 		}
@@ -698,7 +698,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "2" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "4" ,
 		  "name" : "Oignons"
 		}
@@ -708,7 +708,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1 tasse" ,
 		"unit" : "tasse" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "5" ,
 		  "name" : "Fromage râpé"
 		}
@@ -718,7 +718,7 @@
 		"mainIngredient" : false ,
 		"quantity" : "1 cuillère à café" ,
 		"unit" : "cuillère à café" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "6" ,
 		  "name" : "Herbes de Provence"
 		}
@@ -766,7 +766,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "2" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "1" ,
 		  "name" : "Bananes"
 		}
@@ -776,7 +776,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1 tasse" ,
 		"unit" : "pièce" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "2" ,
 		  "name" : "Ananas"
 		}
@@ -786,7 +786,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1 tasse" ,
 		"unit" : "pièce" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "3" ,
 		  "name" : "Mangues"
 		}
@@ -796,7 +796,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1/2 tasse" ,
 		"unit" : "tasse" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "4" ,
 		  "name" : "Yaourt grec"
 		}
@@ -806,7 +806,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1/2 tasse" ,
 		"unit" : "tasse" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "5" ,
 		  "name" : "Jus d'orange"
 		}
@@ -844,7 +844,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1 tête" ,
 		"unit" : "pièce" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "1" ,
 		  "name" : "Laitue"
 		}
@@ -854,7 +854,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "3" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "2" ,
 		  "name" : "Tomates"
 		}
@@ -864,7 +864,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "2" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "3" ,
 		  "name" : "Concombres"
 		}
@@ -874,7 +874,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "2" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "4" ,
 		  "name" : "Poivrons"
 		}
@@ -884,7 +884,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "1" ,
 		"unit" : "pièce" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "5" ,
 		  "name" : "Oignons rouges"
 		}
@@ -894,7 +894,7 @@
 		"mainIngredient" : true ,
 		"quantity" : "2" ,
 		"unit" : "pièces" ,
-		"productInfo" : {
+		"product" : {
 		  "id" : "6" ,
 		  "name" : "Avocats"
 		}
