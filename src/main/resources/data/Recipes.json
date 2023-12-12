@@ -1,394 +1,926 @@
 [
   {
-	"recipe" : {
-	  "id" : "1" ,
-	  "name" : "Soupçon d'été" ,
-	  "season" : "Début d'été" ,
-	  "mealType" : "Entrée" ,
-	  "difficulty" : "Facile" ,
-	  "prepTime" : "15 minutes" ,
-	  "cookTime" : "0 minutes" ,
-	  "ingredients" : [
-		{
+	"id" : "1" ,
+	"name" : "Soupçon d'été" ,
+	"season" : "Début d'été" ,
+	"mealType" : "Entrée" ,
+	"difficulty" : "Facile" ,
+	"prepTime" : "15 minutes" ,
+	"cookTime" : "0 minutes" ,
+	"ingredients" : [
+	  {
+		"id" : "1" ,
+		"mainIngredient" : true ,
+		"quantity" : "1" ,
+		"unit" : "unité" ,
+		"productInfo" : {
 		  "id" : "1" ,
-		  "mainIngredient" : true ,
-		  "quantity" : "1" ,
-		  "unit" : "unité" ,
-		  "productInfo" : {
-			"id" : "1" ,
-			"name" : "Tomate"
-		  }
-		} ,
-		{
+		  "name" : "Tomate"
+		}
+	  } ,
+	  {
+		"id" : "2" ,
+		"mainIngredient" : false ,
+		"quantity" : "1" ,
+		"unit" : "unité" ,
+		"productInfo" : {
 		  "id" : "2" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "1" ,
-		  "unit" : "unité" ,
-		  "productInfo" : {
-			"id" : "2" ,
-			"name" : "Concombre"
-		  }
-		} ,
-		{
+		  "name" : "Concombre"
+		}
+	  } ,
+	  {
+		"id" : "3" ,
+		"mainIngredient" : false ,
+		"quantity" : "1" ,
+		"unit" : "unité" ,
+		"productInfo" : {
 		  "id" : "3" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "1" ,
-		  "unit" : "unité" ,
-		  "productInfo" : {
-			"id" : "3" ,
-			"name" : "Fraise"
-		  }
-		} ,
-		{
+		  "name" : "Fraise"
+		}
+	  } ,
+	  {
+		"id" : "4" ,
+		"mainIngredient" : false ,
+		"quantity" : "1" ,
+		"unit" : "unité" ,
+		"productInfo" : {
 		  "id" : "4" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "1" ,
-		  "unit" : "unité" ,
-		  "productInfo" : {
-			"id" : "4" ,
-			"name" : "Poivron"
-		  }
-		} ,
-		{
+		  "name" : "Poivron"
+		}
+	  } ,
+	  {
+		"id" : "5" ,
+		"mainIngredient" : false ,
+		"quantity" : "1" ,
+		"unit" : "unité" ,
+		"productInfo" : {
 		  "id" : "5" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "1" ,
-		  "unit" : "unité" ,
-		  "productInfo" : {
-			"id" : "5" ,
-			"name" : "Oignon rouge"
-		  }
-		} ,
-		{
+		  "name" : "Oignon rouge"
+		}
+	  } ,
+	  {
+		"id" : "6" ,
+		"mainIngredient" : false ,
+		"quantity" : "1" ,
+		"unit" : "unité" ,
+		"productInfo" : {
 		  "id" : "6" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "1" ,
-		  "unit" : "unité" ,
-		  "productInfo" : {
-			"id" : "6" ,
-			"name" : "Citron"
-		  }
-		}
-	  ] ,
-	  "steps" : [
-		{
-		  "order" : "1" ,
-		  "text" : "Coupez tous les légumes et les fruits en petits morceaux."
-		} ,
-		{
-		  "order" : "2" ,
-		  "text" : "Mélangez-les dans un saladier."
-		} ,
-		{
-		  "order" : "3" ,
-		  "text" : "Arrosez d'un filet de jus de citron et servez frais."
-		}
-	  ]
-	}
-  } ,
-  {
-	"recipe" : {
-	  "id" : "2" ,
-	  "name" : "Soupe de potiron crémeuse" ,
-	  "season" : "Milieu d'hiver" ,
-	  "mealType" : "Entrée" ,
-	  "difficulty" : "Facile" ,
-	  "prepTime" : "20 minutes" ,
-	  "cookTime" : "30 minutes" ,
-	  "ingredients" : [
-		{
-		  "id" : "7" ,
-		  "mainIngredient" : true ,
-		  "quantity" : "1" ,
-		  "unit" : "pièce" ,
-		  "productInfo" : {
-			"id" : "7" ,
-			"name" : "Potiron"
-		  }
-		} ,
-		{
-		  "id" : "8" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "2" ,
-		  "unit" : "pièces" ,
-		  "productInfo" : {
-			"id" : "8" ,
-			"name" : "Carottes"
-		  }
-		} ,
-		{
-		  "id" : "9" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "1" ,
-		  "unit" : "pièce" ,
-		  "productInfo" : {
-			"id" : "9" ,
-			"name" : "Oignon"
-		  }
-		} ,
-		{
-		  "id" : "10" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "2 gousses" ,
-		  "unit" : "pièces" ,
-		  "productInfo" : {
-			"id" : "10" ,
-			"name" : "Ail"
-		  }
-		} ,
-		{
-		  "id" : "11" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "1 cuillère à soupe" ,
-		  "unit" : "unité" ,
-		  "productInfo" : {
-			"id" : "11" ,
-			"name" : "Beurre"
-		  }
-		} ,
-		{
-		  "id" : "12" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "1 litre" ,
-		  "unit" : "unité" ,
-		  "productInfo" : {
-			"id" : "12" ,
-			"name" : "Bouillon de légumes"
-		  }
-		}
-	  ] ,
-	  "steps" : [
-		{
-		  "order" : "1" ,
-		  "text" : "Épluchez et coupez tous les légumes en morceaux."
-		} ,
-		{
-		  "order" : "2" ,
-		  "text" : "Dans une grande casserole, faites fondre le beurre et faites revenir l'oignon et l'ail jusqu'à ce qu'ils soient dorés."
-		} ,
-		{
-		  "order" : "3" ,
-		  "text" : "Ajoutez le potiron, les carottes et le bouillon de légumes. Laissez mijoter jusqu'à ce que les légumes soient tendres."
-		} ,
-		{
-		  "order" : "4" ,
-		  "text" : "Mixez la soupe jusqu'à obtention d'une consistance crémeuse. Assaisonnez avec du sel et du poivre selon votre goût."
-		}
-	  ]
-	}
-  } ,
-  {
-	"recipe" : {
-	  "id" : "3" ,
-	  "name" : "Gratin de chou-fleur au fromage" ,
-	  "season" : "Milieu d'hiver" ,
-	  "mealType" : "Plat principal" ,
-	  "difficulty" : "Moyen" ,
-	  "prepTime" : "25 minutes" ,
-	  "cookTime" : "35 minutes" ,
-	  "ingredients" : [
-		{
-		  "id" : "13" ,
-		  "mainIngredient" : true ,
-		  "quantity" : "1" ,
-		  "unit" : "unité" ,
-		  "productInfo" : {
-			"id" : "13" ,
-			"name" : "Chou-fleur"
-		  }
-		} ,
-		{
-		  "id" : "14" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "2 tasses" ,
-		  "unit" : "unité" ,
-		  "productInfo" : {
-			"id" : "14" ,
-			"name" : "Fromage râpé (au choix)"
-		  }
-		} ,
-		{
-		  "id" : "15" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "1 tasse" ,
-		  "unit" : "unité" ,
-		  "productInfo" : {
-			"id" : "15" ,
-			"name" : "Crème fraîche"
-		  }
-		} ,
-		{
-		  "id" : "16" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "2 cuillères à soupe" ,
-		  "unit" : "unité" ,
-		  "productInfo" : {
-			"id" : "16" ,
-			"name" : "Farine"
-		  }
-		} ,
-		{
-		  "id" : "17" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "2 cuillères à soupe" ,
-		  "unit" : "unité" ,
-		  "productInfo" : {
-			"id" : "17" ,
-			"name" : "Beurre"
-		  }
-		} ,
-		{
-		  "id" : "18" ,
-		  "mainIngredient" : false ,
-		  "quantity" : "1 pincée" ,
-		  "unit" : "unité" ,
-		  "productInfo" : {
-			"id" : "18" ,
-			"name" : "Muscade"
-		  }
-		}
-	  ] ,
-	  "steps" : [
-		{
-		  "order" : "1" ,
-		  "text" : "Préchauffez le four à 200°C."
-		} ,
-		{
-		  "order" : "2" ,
-		  "text" : "Faites cuire le chou-fleur à la vapeur jusqu'à ce qu'il soit tendre."
-		} ,
-		{
-		  "order" : "3" ,
-		  "text" : "Dans une casserole, préparez une béchamel en faisant fondre le beurre, en ajoutant la farine, puis en versant la crème fraîche tout en remuant."
-		} ,
-		{
-		  "order" : "4" ,
-		  "text" : "Ajoutez la moitié du fromage et la muscade à la béchamel."
-		} ,
-		{
-		  "order" : "5" ,
-		  "text" : "Dans un plat à gratin, disposez le chou-fleur cuit et versez la sauce béchamel par-dessus."
-		} ,
-		{
-		  "order" : "6" ,
-		  "text" : "Saupoudrez du reste du fromage râpé sur le dessus et faites gratiner au four jusqu'à ce que le fromage soit doré."
-		}
-	  ]
-	}
-  },{
-  "recipe": {
-	"id": "7",
-	"name": "Purée de Cerfeuil tubéreux et St-Jacques",
-	"season": "Hiver",
-	"mealType": "Plat principal",
-	"difficulty": "Moyen",
-	"prepTime": "45 minutes",
-	"cookTime": "30 minutes",
-	"ingredients": [
-	  {
-		"id": "19",
-		"mainIngredient": true,
-		"quantity": "550",
-		"unit": "grammes",
-		"productInfo": {
-		  "id": "19",
-		  "name": "Cerfeuil tubéreux"
-		}
-	  },
-	  {
-		"id": "20",
-		"mainIngredient": true,
-		"quantity": "16",
-		"unit": "unités",
-		"productInfo": {
-		  "id": "20",
-		  "name": "Noix de St-Jacques sans corail"
-		}
-	  },
-	  {
-		"id": "21",
-		"mainIngredient": false,
-		"quantity": "10-15",
-		"unit": "centilitres",
-		"productInfo": {
-		  "id": "21",
-		  "name": "Lait"
-		}
-	  },
-	  {
-		"id": "22",
-		"mainIngredient": false,
-		"quantity": "1",
-		"unit": "unité",
-		"productInfo": {
-		  "id": "22",
-		  "name": "Orange à jus"
-		}
-	  },
-	  {
-		"id": "23",
-		"mainIngredient": false,
-		"quantity": "30",
-		"unit": "grammes",
-		"productInfo": {
-		  "id": "23",
-		  "name": "Beurre"
-		}
-	  },
-	  {
-		"id": "24",
-		"mainIngredient": false,
-		"quantity": "4",
-		"unit": "cuillères à soupe",
-		"productInfo": {
-		  "id": "24",
-		  "name": "Crème fraîche épaisse"
-		}
-	  },
-	  {
-		"id": "25",
-		"mainIngredient": false,
-		"quantity": "null",
-		"unit": "sel",
-		"productInfo": {
-		  "id": "25",
-		  "name": "Sel"
-		}
-	  },
-	  {
-		"id": "26",
-		"mainIngredient": false,
-		"quantity": "null",
-		"unit": "poivre",
-		"productInfo": {
-		  "id": "26",
-		  "name": "Poivre"
+		  "name" : "Citron"
 		}
 	  }
-	],
-	"steps": [
+	] ,
+	"recipeSteps" : [
 	  {
-		"order": "1",
-		"text": "Épluchez et rincez le cerfeuil tubéreux. Faites-le cuire à l’eau bouillante (comme des pommes de terre) pendant 20-30 minutes."
-	  },
+		"id" : "1" ,
+		"order" : "1" ,
+		"text" : "Coupez tous les légumes et les fruits en petits morceaux."
+	  } ,
 	  {
-		"order": "2",
-		"text": "Ensuite, écrasez le cerfeuil, ajoutez 15g de beurre, le lait pour obtenir une texture de purée fine. Salez et poivrez. Réservez au chaud."
-	  },
+		"id" : "2" ,
+		"order" : "2" ,
+		"text" : "Mélangez-les dans un saladier."
+	  } ,
 	  {
-		"order": "3",
-		"text": "Faites chauffer le reste de beurre dans une poêle, saisissez les noix de St-Jacques avec les zestes d’orange sur feu vif (pas plus d‘1 minute de chaque côté)."
-	  },
+		"id" : "3" ,
+		"order" : "3" ,
+		"text" : "Arrosez d'un filet de jus de citron et servez frais."
+	  }
+	]
+  } ,
+  {
+	"id" : "2" ,
+	"name" : "Soupe de potiron crémeuse" ,
+	"season" : "Milieu d'hiver" ,
+	"mealType" : "Entrée" ,
+	"difficulty" : "Facile" ,
+	"prepTime" : "20 minutes" ,
+	"cookTime" : "30 minutes" ,
+	"ingredients" : [
 	  {
-		"order": "4",
-		"text": "Retirez-les du feu puis réservez-les au chaud. Déglacez la poêle avec le jus d’orange. Ajoutez 4 cuillères à soupe de crème fraîche épaisse pour faire la sauce."
-	  },
+		"id" : "7" ,
+		"mainIngredient" : true ,
+		"quantity" : "1" ,
+		"unit" : "pièce" ,
+		"productInfo" : {
+		  "id" : "7" ,
+		  "name" : "Potiron"
+		}
+	  } ,
 	  {
-		"order": "5",
-		"text": "Bon Appétit !!!"
+		"id" : "8" ,
+		"mainIngredient" : false ,
+		"quantity" : "2" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "8" ,
+		  "name" : "Carottes"
+		}
+	  } ,
+	  {
+		"id" : "9" ,
+		"mainIngredient" : false ,
+		"quantity" : "1" ,
+		"unit" : "pièce" ,
+		"productInfo" : {
+		  "id" : "9" ,
+		  "name" : "Oignon"
+		}
+	  } ,
+	  {
+		"id" : "10" ,
+		"mainIngredient" : false ,
+		"quantity" : "2 gousses" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "10" ,
+		  "name" : "Ail"
+		}
+	  } ,
+	  {
+		"id" : "11" ,
+		"mainIngredient" : false ,
+		"quantity" : "1 cuillère à soupe" ,
+		"unit" : "unité" ,
+		"productInfo" : {
+		  "id" : "11" ,
+		  "name" : "Beurre"
+		}
+	  } ,
+	  {
+		"id" : "12" ,
+		"mainIngredient" : false ,
+		"quantity" : "1 litre" ,
+		"unit" : "unité" ,
+		"productInfo" : {
+		  "id" : "12" ,
+		  "name" : "Bouillon de légumes"
+		}
+	  }
+	] ,
+	"recipeSteps" : [
+	  {
+		"id" : "1" ,
+		"order" : "1" ,
+		"text" : "Épluchez et coupez tous les légumes en morceaux."
+	  } ,
+	  {
+		"id" : "2" ,
+		"order" : "2" ,
+		"text" : "Dans une grande casserole, faites fondre le beurre et faites revenir l'oignon et l'ail jusqu'à ce qu'ils soient dorés."
+	  } ,
+	  {
+		"id" : "3" ,
+		"order" : "3" ,
+		"text" : "Ajoutez le potiron, les carottes et le bouillon de légumes. Laissez mijoter jusqu'à ce que les légumes soient tendres."
+	  } ,
+	  {
+		"id" : "4" ,
+		"order" : "4" ,
+		"text" : "Mixez la soupe jusqu'à obtention d'une consistance crémeuse. Assaisonnez avec du sel et du poivre selon votre goût."
+	  }
+	]
+  } ,
+  {
+	"id" : "3" ,
+	"name" : "Gratin de chou-fleur au fromage" ,
+	"season" : "Milieu d'hiver" ,
+	"mealType" : "Plat principal" ,
+	"difficulty" : "Moyen" ,
+	"prepTime" : "25 minutes" ,
+	"cookTime" : "35 minutes" ,
+	"ingredients" : [
+	  {
+		"id" : "13" ,
+		"mainIngredient" : true ,
+		"quantity" : "1" ,
+		"unit" : "unité" ,
+		"productInfo" : {
+		  "id" : "13" ,
+		  "name" : "Chou-fleur"
+		}
+	  } ,
+	  {
+		"id" : "14" ,
+		"mainIngredient" : false ,
+		"quantity" : "2 tasses" ,
+		"unit" : "unité" ,
+		"productInfo" : {
+		  "id" : "14" ,
+		  "name" : "Fromage râpé (au choix)"
+		}
+	  } ,
+	  {
+		"id" : "15" ,
+		"mainIngredient" : false ,
+		"quantity" : "1 tasse" ,
+		"unit" : "unité" ,
+		"productInfo" : {
+		  "id" : "15" ,
+		  "name" : "Crème fraîche"
+		}
+	  } ,
+	  {
+		"id" : "16" ,
+		"mainIngredient" : false ,
+		"quantity" : "2 cuillères à soupe" ,
+		"unit" : "unité" ,
+		"productInfo" : {
+		  "id" : "16" ,
+		  "name" : "Farine"
+		}
+	  } ,
+	  {
+		"id" : "17" ,
+		"mainIngredient" : false ,
+		"quantity" : "2 cuillères à soupe" ,
+		"unit" : "unité" ,
+		"productInfo" : {
+		  "id" : "17" ,
+		  "name" : "Beurre"
+		}
+	  } ,
+	  {
+		"id" : "18" ,
+		"mainIngredient" : false ,
+		"quantity" : "1 pincée" ,
+		"unit" : "unité" ,
+		"productInfo" : {
+		  "id" : "18" ,
+		  "name" : "Muscade"
+		}
+	  }
+	] ,
+	"steps" : [
+	  {
+		"order" : "1" ,
+		"text" : "Préchauffez le four à 200°C."
+	  } ,
+	  {
+		"order" : "2" ,
+		"text" : "Faites cuire le chou-fleur à la vapeur jusqu'à ce qu'il soit tendre."
+	  } ,
+	  {
+		"order" : "3" ,
+		"text" : "Dans une casserole, préparez une béchamel en faisant fondre le beurre, en ajoutant la farine, puis en versant la crème fraîche tout en remuant."
+	  } ,
+	  {
+		"order" : "4" ,
+		"text" : "Ajoutez la moitié du fromage et la muscade à la béchamel."
+	  } ,
+	  {
+		"order" : "5" ,
+		"text" : "Dans un plat à gratin, disposez le chou-fleur cuit et versez la sauce béchamel par-dessus."
+	  } ,
+	  {
+		"order" : "6" ,
+		"text" : "Saupoudrez du reste du fromage râpé sur le dessus et faites gratiner au four jusqu'à ce que le fromage soit doré."
+	  }
+	]
+  } ,
+  {
+	"id" : "7" ,
+	"name" : "Purée de Cerfeuil tubéreux et St-Jacques" ,
+	"season" : "Hiver" ,
+	"mealType" : "Plat principal" ,
+	"difficulty" : "Moyen" ,
+	"prepTime" : "45 minutes" ,
+	"cookTime" : "30 minutes" ,
+	"ingredients" : [
+	  {
+		"id" : "19" ,
+		"mainIngredient" : true ,
+		"quantity" : "550" ,
+		"unit" : "grammes" ,
+		"productInfo" : {
+		  "id" : "19" ,
+		  "name" : "Cerfeuil tubéreux"
+		}
+	  } ,
+	  {
+		"id" : "20" ,
+		"mainIngredient" : true ,
+		"quantity" : "16" ,
+		"unit" : "unités" ,
+		"productInfo" : {
+		  "id" : "20" ,
+		  "name" : "Noix de St-Jacques sans corail"
+		}
+	  } ,
+	  {
+		"id" : "21" ,
+		"mainIngredient" : false ,
+		"quantity" : "10-15" ,
+		"unit" : "centilitres" ,
+		"productInfo" : {
+		  "id" : "21" ,
+		  "name" : "Lait"
+		}
+	  } ,
+	  {
+		"id" : "22" ,
+		"mainIngredient" : false ,
+		"quantity" : "1" ,
+		"unit" : "unité" ,
+		"productInfo" : {
+		  "id" : "22" ,
+		  "name" : "Orange à jus"
+		}
+	  } ,
+	  {
+		"id" : "23" ,
+		"mainIngredient" : false ,
+		"quantity" : "30" ,
+		"unit" : "grammes" ,
+		"productInfo" : {
+		  "id" : "23" ,
+		  "name" : "Beurre"
+		}
+	  } ,
+	  {
+		"id" : "24" ,
+		"mainIngredient" : false ,
+		"quantity" : "4" ,
+		"unit" : "cuillères à soupe" ,
+		"productInfo" : {
+		  "id" : "24" ,
+		  "name" : "Crème fraîche épaisse"
+		}
+	  } ,
+	  {
+		"id" : "25" ,
+		"mainIngredient" : false ,
+		"quantity" : "null" ,
+		"unit" : "sel" ,
+		"productInfo" : {
+		  "id" : "25" ,
+		  "name" : "Sel"
+		}
+	  } ,
+	  {
+		"id" : "26" ,
+		"mainIngredient" : false ,
+		"quantity" : "null" ,
+		"unit" : "poivre" ,
+		"productInfo" : {
+		  "id" : "26" ,
+		  "name" : "Poivre"
+		}
+	  }
+	] ,
+	"recipeSteps" : [
+	  {
+		"id" : "1" ,
+		"order" : "1" ,
+		"text" : "Épluchez et rincez le cerfeuil tubéreux. Faites-le cuire à l’eau bouillante (comme des pommes de terre) pendant 20-30 minutes."
+	  } ,
+	  {
+		"id" : "2" ,
+		"order" : "2" ,
+		"text" : "Ensuite, écrasez le cerfeuil, ajoutez 15g de beurre, le lait pour obtenir une texture de purée fine. Salez et poivrez. Réservez au chaud."
+	  } ,
+	  {
+		"id" : "3" ,
+		"order" : "3" ,
+		"text" : "Faites chauffer le reste de beurre dans une poêle, saisissez les noix de St-Jacques avec les zestes d’orange sur feu vif (pas plus d‘1 minute de chaque côté)."
+	  } ,
+	  {
+		"id" : "4" ,
+		"order" : "4" ,
+		"text" : "Retirez-les du feu puis réservez-les au chaud. Déglacez la poêle avec le jus d’orange. Ajoutez 4 cuillères à soupe de crème fraîche épaisse pour faire la sauce."
+	  } ,
+	  {
+		"id" : "5" ,
+		"order" : "5" ,
+		"text" : "Bon Appétit !!!"
+	  }
+	]
+  } ,
+  {
+	"id" : "1" ,
+	"name" : "Salade estivale fraîche" ,
+	"season" : "Été" ,
+	"mealType" : "Entrée" ,
+	"difficulty" : "Facile" ,
+	"prepTime" : "15 minutes" ,
+	"cookTime" : "0 minutes" ,
+	"ingredients" : [
+	  {
+		"id" : "1" ,
+		"mainIngredient" : true ,
+		"quantity" : "1" ,
+		"unit" : "pièce" ,
+		"productInfo" : {
+		  "id" : "1" ,
+		  "name" : "Laitue"
+		}
+	  } ,
+	  {
+		"id" : "2" ,
+		"mainIngredient" : true ,
+		"quantity" : "3" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "2" ,
+		  "name" : "Tomates"
+		}
+	  } ,
+	  {
+		"id" : "3" ,
+		"mainIngredient" : true ,
+		"quantity" : "2" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "3" ,
+		  "name" : "Concombres"
+		}
+	  } ,
+	  {
+		"id" : "4" ,
+		"mainIngredient" : false ,
+		"quantity" : "2" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "4" ,
+		  "name" : "Poivrons"
+		}
+	  } ,
+	  {
+		"id" : "5" ,
+		"mainIngredient" : false ,
+		"quantity" : "1" ,
+		"unit" : "pièce" ,
+		"productInfo" : {
+		  "id" : "5" ,
+		  "name" : "Oignons rouges"
+		}
+	  } ,
+	  {
+		"id" : "6" ,
+		"mainIngredient" : false ,
+		"quantity" : "2" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "6" ,
+		  "name" : "Avocats"
+		}
+	  }
+	] ,
+	"recipeSteps" : [
+	  {
+		"id" : "1" ,
+		"order" : "1" ,
+		"text" : "Lavez et coupez tous les légumes."
+	  } ,
+	  {
+		"id" : "2" ,
+		"order" : "2" ,
+		"text" : "Mélangez-les dans un grand bol."
+	  } ,
+	  {
+		"id" : "3" ,
+		"order" : "3" ,
+		"text" : "Préparez une vinaigrette légère avec de l'huile d'olive, du vinaigre balsamique, du sel et du poivre."
+	  } ,
+	  {
+		"id" : "4" ,
+		"order" : "4" ,
+		"text" : "Versez la vinaigrette sur la salade et mélangez doucement."
+	  }
+	]
+  } ,
+  {
+	"id" : "5" ,
+	"name" : "Brochettes de fruits frais" ,
+	"season" : "Été" ,
+	"mealType" : "Dessert" ,
+	"difficulty" : "Facile" ,
+	"prepTime" : "20 minutes" ,
+	"cookTime" : "0 minutes" ,
+	"ingredients" : [
+	  {
+		"id" : "1" ,
+		"mainIngredient" : true ,
+		"quantity" : "12" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "1" ,
+		  "name" : "Fraises"
+		}
+	  } ,
+	  {
+		"id" : "2" ,
+		"mainIngredient" : true ,
+		"quantity" : "1 tasse" ,
+		"unit" : "tasse" ,
+		"productInfo" : {
+		  "id" : "2" ,
+		  "name" : "Raisins rouges"
+		}
+	  } ,
+	  {
+		"id" : "3" ,
+		"mainIngredient" : true ,
+		"quantity" : "1 tasse" ,
+		"unit" : "tasse" ,
+		"productInfo" : {
+		  "id" : "3" ,
+		  "name" : "Ananas"
+		}
+	  } ,
+	  {
+		"id" : "4" ,
+		"mainIngredient" : true ,
+		"quantity" : "1 tasse" ,
+		"unit" : "tasse" ,
+		"productInfo" : {
+		  "id" : "4" ,
+		  "name" : "Melon"
+		}
+	  } ,
+	  {
+		"id" : "5" ,
+		"mainIngredient" : false ,
+		"quantity" : "2 cuillères à soupe" ,
+		"unit" : "cuillères à soupe" ,
+		"productInfo" : {
+		  "id" : "5" ,
+		  "name" : "Miel"
+		}
+	  }
+	] ,
+	"recipeSteps" : [
+	  {
+		"id" : "1" ,
+		"order" : "1" ,
+		"text" : "Coupez les fruits en morceaux de taille similaire."
+	  } ,
+	  {
+		"id" : "2" ,
+		"order" : "2" ,
+		"text" : "Enfilez-les sur des brochettes en alternant les couleurs."
+	  } ,
+	  {
+		"id" : "3" ,
+		"order" : "3" ,
+		"text" : "Arrosez de miel juste avant de servir."
+	  }
+	]
+  } ,
+  {
+	"id" : "4" ,
+	"name" : "Tarte aux fruits d'été" ,
+	"season" : "Été" ,
+	"mealType" : "Dessert" ,
+	"difficulty" : "Avancé" ,
+	"prepTime" : "30 minutes" ,
+	"cookTime" : "25 minutes" ,
+	"ingredients" : [
+	  {
+		"id" : "1" ,
+		"mainIngredient" : true ,
+		"quantity" : "1" ,
+		"unit" : "pièce" ,
+		"productInfo" : {
+		  "id" : "1" ,
+		  "name" : "Pâte brisée"
+		}
+	  } ,
+	  {
+		"id" : "2" ,
+		"mainIngredient" : true ,
+		"quantity" : "4" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "2" ,
+		  "name" : "Pêches"
+		}
+	  } ,
+	  {
+		"id" : "3" ,
+		"mainIngredient" : true ,
+		"quantity" : "6" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "3" ,
+		  "name" : "Abricots"
+		}
+	  } ,
+	  {
+		"id" : "4" ,
+		"mainIngredient" : true ,
+		"quantity" : "1 tasse" ,
+		"unit" : "tasse" ,
+		"productInfo" : {
+		  "id" : "4" ,
+		  "name" : "Cerises"
+		}
+	  } ,
+	  {
+		"id" : "5" ,
+		"mainIngredient" : false ,
+		"quantity" : "1/2 tasse" ,
+		"unit" : "tasse" ,
+		"productInfo" : {
+		  "id" : "5" ,
+		  "name" : "Sucre"
+		}
+	  }
+	] ,
+	"recipeSteps" : [
+	  {
+		"id" : "1" ,
+		"order" : "1" ,
+		"text" : "Préchauffez le four à 180°C."
+	  } ,
+	  {
+		"id" : "2" ,
+		"order" : "2" ,
+		"text" : "Étalez la pâte brisée dans un moule à tarte."
+	  } ,
+	  {
+		"id" : "3" ,
+		"order" : "3" ,
+		"text" : "Disposez les fruits coupés en tranches sur la pâte."
+	  } ,
+	  {
+		"id" : "4" ,
+		"order" : "4" ,
+		"text" : "Saupoudrez de sucre."
+	  } ,
+	  {
+		"id" : "5" ,
+		"order" : "5" ,
+		"text" : "Enfournez pendant 25 minutes, jusqu'à ce que la croûte soit dorée."
+	  }
+	]
+  } ,
+  {
+	"id" : "3" ,
+	"name" : "Gratin de légumes d'été" ,
+	"season" : "Été" ,
+	"mealType" : "Plat principal" ,
+	"difficulty" : "Moyen" ,
+	"prepTime" : "20 minutes" ,
+	"cookTime" : "30 minutes" ,
+	"ingredients" : [
+	  {
+		"id" : "1" ,
+		"mainIngredient" : true ,
+		"quantity" : "2" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "1" ,
+		  "name" : "Courgettes"
+		}
+	  } ,
+	  {
+		"id" : "2" ,
+		"mainIngredient" : true ,
+		"quantity" : "2" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "2" ,
+		  "name" : "Aubergines"
+		}
+	  } ,
+	  {
+		"id" : "3" ,
+		"mainIngredient" : true ,
+		"quantity" : "4" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "3" ,
+		  "name" : "Tomates"
+		}
+	  } ,
+	  {
+		"id" : "4" ,
+		"mainIngredient" : true ,
+		"quantity" : "2" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "4" ,
+		  "name" : "Oignons"
+		}
+	  } ,
+	  {
+		"id" : "5" ,
+		"mainIngredient" : false ,
+		"quantity" : "1 tasse" ,
+		"unit" : "tasse" ,
+		"productInfo" : {
+		  "id" : "5" ,
+		  "name" : "Fromage râpé"
+		}
+	  } ,
+	  {
+		"id" : "6" ,
+		"mainIngredient" : false ,
+		"quantity" : "1 cuillère à café" ,
+		"unit" : "cuillère à café" ,
+		"productInfo" : {
+		  "id" : "6" ,
+		  "name" : "Herbes de Provence"
+		}
+	  }
+	] ,
+	"recipeSteps" : [
+	  {
+		"id" : "1" ,
+		"order" : "1" ,
+		"text" : "Préchauffez le four à 200°C."
+	  } ,
+	  {
+		"id" : "2" ,
+		"order" : "2" ,
+		"text" : "Coupez tous les légumes en tranches fines."
+	  } ,
+	  {
+		"id" : "3" ,
+		"order" : "3" ,
+		"text" : "Disposez-les dans un plat à gratin en alternant les couches."
+	  } ,
+	  {
+		"id" : "4" ,
+		"order" : "4" ,
+		"text" : "Saupoudrez d'herbes de Provence et de fromage râpé."
+	  } ,
+	  {
+		"id" : "5" ,
+		"order" : "5" ,
+		"text" : "Enfournez pendant 30 minutes, jusqu'à ce que le fromage soit doré."
+	  }
+	]
+  } ,
+  {
+	"id" : "2" ,
+	"name" : "Smoothie tropical rafraîchissant" ,
+	"season" : "" ,
+	"mealType" : "" ,
+	"difficulty" : "Facile" ,
+	"prepTime" : "10 minutes" ,
+	"cookTime" : "0 minutes" ,
+	"ingredients" : [
+	  {
+		"id" : "1" ,
+		"mainIngredient" : true ,
+		"quantity" : "2" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "1" ,
+		  "name" : "Bananes"
+		}
+	  } ,
+	  {
+		"id" : "2" ,
+		"mainIngredient" : true ,
+		"quantity" : "1 tasse" ,
+		"unit" : "pièce" ,
+		"productInfo" : {
+		  "id" : "2" ,
+		  "name" : "Ananas"
+		}
+	  } ,
+	  {
+		"id" : "3" ,
+		"mainIngredient" : true ,
+		"quantity" : "1 tasse" ,
+		"unit" : "pièce" ,
+		"productInfo" : {
+		  "id" : "3" ,
+		  "name" : "Mangues"
+		}
+	  } ,
+	  {
+		"id" : "4" ,
+		"mainIngredient" : true ,
+		"quantity" : "1/2 tasse" ,
+		"unit" : "tasse" ,
+		"productInfo" : {
+		  "id" : "4" ,
+		  "name" : "Yaourt grec"
+		}
+	  } ,
+	  {
+		"id" : "5" ,
+		"mainIngredient" : true ,
+		"quantity" : "1/2 tasse" ,
+		"unit" : "tasse" ,
+		"productInfo" : {
+		  "id" : "5" ,
+		  "name" : "Jus d'orange"
+		}
+	  }
+	] ,
+	"recipeSteps" : [
+	  {
+		"id" : "1" ,
+		"order" : "1" ,
+		"text" : "Placez tous les ingrédients dans un mixeur."
+	  } ,
+	  {
+		"id" : "2" ,
+		"order" : "2" ,
+		"text" : "Mélangez jusqu'à obtention d'une consistance lisse."
+	  } ,
+	  {
+		"id" : "3" ,
+		"order" : "3" ,
+		"text" : "Servez immédiatement et dégustez!"
+	  }
+	]
+  } ,
+  {
+	"id" : "1" ,
+	"name" : "Salade estivale fraîche" ,
+	"season" : "" ,
+	"mealType" : "" ,
+	"difficulty" : "Facile" ,
+	"prepTime" : "15 minutes" ,
+	"cookTime" : "0 minutes" ,
+	"ingredients" : [
+	  {
+		"id" : "1" ,
+		"mainIngredient" : true ,
+		"quantity" : "1 tête" ,
+		"unit" : "pièce" ,
+		"productInfo" : {
+		  "id" : "1" ,
+		  "name" : "Laitue"
+		}
+	  } ,
+	  {
+		"id" : "2" ,
+		"mainIngredient" : true ,
+		"quantity" : "3" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "2" ,
+		  "name" : "Tomates"
+		}
+	  } ,
+	  {
+		"id" : "3" ,
+		"mainIngredient" : true ,
+		"quantity" : "2" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "3" ,
+		  "name" : "Concombres"
+		}
+	  } ,
+	  {
+		"id" : "4" ,
+		"mainIngredient" : true ,
+		"quantity" : "2" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "4" ,
+		  "name" : "Poivrons"
+		}
+	  } ,
+	  {
+		"id" : "5" ,
+		"mainIngredient" : true ,
+		"quantity" : "1" ,
+		"unit" : "pièce" ,
+		"productInfo" : {
+		  "id" : "5" ,
+		  "name" : "Oignons rouges"
+		}
+	  } ,
+	  {
+		"id" : "6" ,
+		"mainIngredient" : true ,
+		"quantity" : "2" ,
+		"unit" : "pièces" ,
+		"productInfo" : {
+		  "id" : "6" ,
+		  "name" : "Avocats"
+		}
+	  }
+	] ,
+	"recipeSteps" : [
+	  {
+		"id" : "1" ,
+		"order" : "1" ,
+		"text" : "Lavez et coupez tous les légumes."
+	  } ,
+	  {
+		"id" : "2" ,
+		"order" : "2" ,
+		"text" : "Mélangez-les dans un grand bol."
+	  } ,
+	  {
+		"id" : "3" ,
+		"order" : "3" ,
+		"text" : "Préparez une vinaigrette légère avec de l'huile d'olive, du vinaigre balsamique, du sel et du poivre."
+	  } ,
+	  {
+		"id" : "4" ,
+		"order" : "4" ,
+		"text" : "Versez la vinaigrette sur la salade et mélangez doucement."
 	  }
 	]
   }
-}
-
 ]
