@@ -3,11 +3,22 @@ package com.jtissdev.api.dao;
 import com.jtissdev.api.model.Product;
 import com.jtissdev.api.model.Recipe;
 import com.jtissdev.api.model.RecipeList;
+import org.springframework.stereotype.Repository;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import java.util.List;
 
+
+@Repository
 public class RecipeDAOImpl implements RecipeDAO {
 	private RecipeList recipeList;  // Utilise maintenant RecipeList
+	@PersistenceContext
+	private EntityManager entityManager;
 
 	public RecipeDAOImpl() {
 		this.recipeList = new RecipeList();
@@ -73,6 +84,19 @@ public class RecipeDAOImpl implements RecipeDAO {
 	@Override
 	public List<Recipe> getByTotalTimeLessThan(String totalTime) {
 		return null;
+	}
+
+	@Override
+	public List<Recipe> getRecipesByMainIngredient(String mainIngredient) {
+		CriteriaBuilder cb = entityManager.getCriteriaBuilder();
+		CriteriaQuery<Recipe> cq = cb.createQuery(Recipe.class);
+		Root<Recipe> root = cq.from(Recipe.class);
+
+		cq.select(root)
+				.where(cb.equal(root.join("ingredients").get("mainIngredient"), mainIngredient));
+
+		TypedQuery<Recipe> query = entityManager.createQuery(cq);
+		return query.getResultList();
 	}
 
 	/**

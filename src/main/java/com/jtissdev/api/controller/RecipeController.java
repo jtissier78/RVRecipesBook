@@ -31,6 +31,11 @@ public class RecipeController {
 		return recipeService.getRecipeById(id);
 	}
 
+	@GetMapping("/byIngredient/{mainIngredient}")
+	public List<Recipe> getRecipesByMainIngredient(@PathVariable String mainIngredient) {
+		return recipeService.getRecipesByMainIngredient(mainIngredient);
+	}
+
 	@PostMapping
 	public Recipe addRecipe(@RequestBody Recipe recipe) {
 		return recipeService.addRecipe(recipe);

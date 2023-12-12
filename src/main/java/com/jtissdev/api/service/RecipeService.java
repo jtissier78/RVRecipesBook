@@ -1,5 +1,6 @@
 package com.jtissdev.api.service;
 
+import com.jtissdev.api.dao.RecipeDAO;
 import com.jtissdev.api.model.Recipe;
 import com.jtissdev.api.repository.RecipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,14 @@ import java.util.Optional;
 @Service
 public class RecipeService {
 
-	private final RecipeRepository recipeRepository;
+
+	private RecipeDAO recipeDAO;
+
+	@Autowired
+	public RecipeService(RecipeDAO recipeDAO) {
+		this.recipeDAO = recipeDAO;
+	}
+	private RecipeRepository recipeRepository;
 
 	@Autowired
 	public RecipeService(RecipeRepository recipeRepository) {
@@ -24,6 +32,10 @@ public class RecipeService {
 
 	public Optional<Recipe> getRecipeById(Long id) {
 		return recipeRepository.findById(id);
+	}
+
+	public List<Recipe> getRecipesByMainIngredient(String mainIngredient) {
+		return recipeDAO.getRecipesByMainIngredient(mainIngredient);
 	}
 
 	public Recipe addRecipe(Recipe recipe) {

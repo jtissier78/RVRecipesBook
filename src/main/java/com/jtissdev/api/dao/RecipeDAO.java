@@ -19,6 +19,8 @@ public interface  RecipeDAO {
 
 	List<Recipe> getByMainIngredient(String id, String fullName, String partialName);
 
+	List<Recipe> getRecipesByMainIngredient(String mainIngredient);
+
 	List<Recipe> getByDifficultyLessThan(String difficulty);
 
 	List<Recipe> getByTotalTimeLessThan(String totalTime);
