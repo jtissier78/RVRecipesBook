@@ -24,12 +24,14 @@
   "dataTables": [
 	{
 	  "tableName": "recipe",
-	  "createScript": "`.`recipe`(`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`name` tinytext,`difficulty` tinytext,`prepTime` time,`cookTime` time) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;",
+	  "createScript": "`recipe`(`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`name` tinytext,`season` varchar(255),`mealType` varchar(255),`difficulty` varchar(255),`prepTime` time,`cookTime` time) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;",
 	  "loadScript": {
-		"stmt": "INSERT INTO `recipe`(`id`, `name`, `difficulty`, `prepTime`, `cookTime`) VALUES (':id',':name',':difficulty',':prepTime',':cookTime')",
+		"stmt": "INSERT INTO `recipe`(`id`, `name`, `season`, `mealType`, `difficulty`, `prepTime`, `cookTime`) VALUES (':id',':name',':season',':mealType',':difficulty',':prepTime',':cookTime')",
 		"corresp": {
 		  "id": "int",
 		  "name": "String",
+		  "season": "String",
+		  "mealType": "String",
 		  "difficulty": "String",
 		  "prepTime": "Time",
 		  "cookTime": "Time"
