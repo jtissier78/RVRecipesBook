@@ -3,13 +3,19 @@
 	"grant": {
 	  "require": "REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;",
 	  "globalPrivilege": "GRANT USAGE",
-	  "specificPrivilege": "GRANT ALL PRIVILEGES",
-	  "grantOption": "WITH GRANT OPTION"
+	  "specificPrivilege": "GRANT SELECT, INSERT, UPDATE, DELETE",
+	  "grantOption": ""
 	},
 	"reader": {
 	  "require": "REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;",
 	  "globalPrivilege": "GRANT USAGE",
 	  "specificPrivilege": "GRANT SELECT",
+	  "grantOption": ""
+	},
+	"modifier": {
+	  "require": "REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;",
+	  "globalPrivilege": "GRANT USAGE",
+	  "specificPrivilege": "GRANT SELECT, INSERT, UPDATE, DELETE",
 	  "grantOption": ""
 	}
   },
@@ -18,18 +24,20 @@
 	  "beforeName": "CREATE DATABASE IF NOT EXISTS `",
 	  "options": "` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;"
 	},
-	"createOrder": ["product", "recipe", "ingredient", "step"],
+	"createOrder": ["product", "recipe", "step", "recipeSteps", "ingredients"],
 	"deleteOrder": []
   },
   "dataTables": [
 	{
 	  "tableName": "recipe",
-	  "createScript": "`.`recipe`(`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`name` tinytext,`difficulty` tinytext,`prepTime` time,`cookTime` time) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;",
+	  "createScript": "CREATE TABLE IF NOT EXISTS `recipe`(`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`name` tinytext,`season` seasonEnum,`mealType` mealTypeEnum,`difficulty` difficultyEnum,`prepTime` time DEFAULT '00:00:00' NOT NULL,`cookTime` time DEFAULT '00:00:00' NOT NULL) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;",
 	  "loadScript": {
-		"stmt": "INSERT INTO `recipe`(`id`, `name`, `difficulty`, `prepTime`, `cookTime`) VALUES (':id',':name',':difficulty',':prepTime',':cookTime')",
+		"stmt": "INSERT INTO `recipe`(`id`, `name`, `season`, `mealType`, `difficulty`, `prepTime`, `cookTime`) VALUES (':id',':name',':season',':mealType',':difficulty',':prepTime',':cookTime')",
 		"corresp": {
 		  "id": "int",
 		  "name": "String",
+		  "season": "String",
+		  "mealType": "String",
 		  "difficulty": "String",
 		  "prepTime": "Time",
 		  "cookTime": "Time"
@@ -42,16 +50,16 @@
 	},
 	{
 	  "tableName": "ingredient",
-	  "createScript": "`.`ingredient`(`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`recipeId` int(11) NOT NULL,`mainIngredient` tinytext,`quantity` double,`unit` tinytext,`productId` int(11) NOT NULL,FOREIGN KEY (`recipeId`) REFERENCES `recipe` (`id`),FOREIGN KEY (`productId`) REFERENCES `product` (`id`)) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;",
+	  "createScript": "CREATE TABLE IF NOT EXISTS `ingredient`(`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`recipeId` int(11) NOT NULL,`mainIngredient` tinytext DEFAULT false,`quantity` double,`unit` ingredientUnits DEFAULT 'pièce',`product` INT NOT NULL,FOREIGN KEY (`recipeId`) REFERENCES `recipe` (`id`),FOREIGN KEY (`product`) REFERENCES `products` (`id`)) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;",
 	  "loadScript": {
-		"stmt": "INSERT INTO `ingredient`(`id`, `recipeId`, `mainIngredient`, `quantity`, `unit`, `productId`) VALUES (':id',':recipeId',':mainIngredient',':quantity',':unit',':productId')",
+		"stmt": "INSERT INTO `ingredient`(`id`, `recipeId`, `mainIngredient`, `quantity`, `unit`, `product`) VALUES (':id',':recipeId',':mainIngredient',':quantity',':unit',':product')",
 		"corresp": {
 		  "id": "int",
 		  "recipeId": "int",
 		  "mainIngredient": "String",
 		  "quantity": "double",
 		  "unit": "String",
-		  "productId": "int"
+		  "product": "int"
 		}
 	  },
 	  "Foreigner": [],
@@ -63,8 +71,8 @@
 		  "referenceColumn": "id"
 		},
 		{
-		  "key": "productId",
-		  "referenceTable": "product",
+		  "key": "product",
+		  "referenceTable": "products",
 		  "referenceColumn": "id"
 		}
 	  ],
@@ -72,14 +80,29 @@
 	},
 	{
 	  "tableName": "step",
-	  "createScript": "`.`step`(`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`recipeId` int(11) NOT NULL,`order` int(11) NOT NULL,`text` text NOT NULL,FOREIGN KEY (`recipeId`) REFERENCES `recipe` (`id`)) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;",
+	  "createScript": "CREATE TABLE IF NOT EXISTS `step`(`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`text` text NOT NULL) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;",
 	  "loadScript": {
-		"stmt": "INSERT INTO `step`(`id`, `recipeId`, `order`, `text`) VALUES (':id',':recipeId',':order',':text')",
+		"stmt": "INSERT INTO `step`(`id`, `text`) VALUES (':id',':text')",
+		"corresp": {
+		  "id": "int",
+		  "text": "text"
+		}
+	  },
+	  "Foreigner": [],
+	  "primaryKey": "id",
+	  "foreignKey": [],
+	  "RecursiveKey": []
+	},
+	{
+	  "tableName": "recipeSteps",
+	  "createScript": "CREATE TABLE IF NOT EXISTS `recipeSteps`(`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`recipeId` int(11) NOT NULL,`stepId` int(11) NOT NULL,`orderNum` int(11) NOT NULL,FOREIGN KEY (`recipeId`) REFERENCES `recipe` (`id`),FOREIGN KEY (`stepId`) REFERENCES `step` (`id`)) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;",
+	  "loadScript": {
+		"stmt": "INSERT INTO `recipeSteps`(`id`, `recipeId`, `stepId`, `orderNum`) VALUES (':id',':recipeId',':stepId',':orderNum')",
 		"corresp": {
 		  "id": "int",
 		  "recipeId": "int",
-		  "order": "int",
-		  "text": "text"
+		  "stepId": "int",
+		  "orderNum": "int"
 		}
 	  },
 	  "Foreigner": [],
@@ -89,15 +112,20 @@
 		  "key": "recipeId",
 		  "referenceTable": "recipe",
 		  "referenceColumn": "id"
+		},
+		{
+		  "key": "stepId",
+		  "referenceTable": "step",
+		  "referenceColumn": "id"
 		}
 	  ],
 	  "RecursiveKey": []
 	},
 	{
-	  "tableName": "product",
-	  "createScript": "`.`product`(`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`name` tinytext NOT NULL) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;",
+	  "tableName": "products",
+	  "createScript": "CREATE TABLE IF NOT EXISTS `products`(`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,`name` tinytext NOT NULL) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;",
 	  "loadScript": {
-		"stmt": "INSERT INTO `product`(`id`, `name`) VALUES (':id',':name')",
+		"stmt": "INSERT INTO `products`(`id`, `name`) VALUES (':id',':name')",
 		"corresp": {
 		  "id": "int",
 		  "name": "String"
